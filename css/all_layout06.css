@@ -449,6 +449,96 @@
 
 
 
+.allProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+
+.allProduct h2 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.allProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.allProduct .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.allProduct .aproductSlide figure{
+    padding: 0 15px;
+}
+
+
+.allProduct .inner {
+    margin-bottom: 20px;
+}
+
+.allProduct .inner + strong {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.allProduct .slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.allProduct .slick-dots li {
+    width: 13px;
+    height: 13px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.allProduct .slick-dots li.slick-active {
+    background: #f00;
+}
+
+.allProduct .slick-dots li button {
+    display: none;
+}
+
+.allProduct i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+}
+
+.allProduct i:first-child {
+    margin-left: -700px;
+}
+
+.allProduct i:last-child {
+    margin-left: 700px;
+}
+
+
+
+
+
 
 
 
