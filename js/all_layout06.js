@@ -45,9 +45,25 @@ $('.evenetProduct i:nth-of-type(1)').on('click', function(){
 
 $('.evenetProduct i:nth-of-type(2)').on('click', function(){
     $('.eProductSlide').slick('slickPlay')
-})
+});
 
 
+//
+
+$('.aproductSlide').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 5,
+    centerMode: true,
+});
+
+$('.allProduct i:first-child').on('click', function(){
+    $('.aproductSlide').slick('slickPrev')
+});
+
+$('.allProduct i:last-child').on('click', function(){
+    $('.aproductSlide').slick('slickNext')
+});
 
 
 
