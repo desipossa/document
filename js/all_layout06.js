@@ -10,11 +10,42 @@ $('.topBannner .container i').on('click', topBannerHandler);
 
 
 $('.visualSlide').slick({
-    arrows: false,
+    arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     dots: true,
+    prevArrow: '    <div class="msLeft"></div>      ',
+    nextArrow: '    <div class="msRight"></div>      '
 });
+
+
+// 슬라이드에 애니메이션...
+$('.visualSlide figure').eq(1).addClass('oo');
+$('.visualSlide').on('afterChange', function (e,s,c){
+    $('.visualSlide figure').eq(c+1).addClass('oo').siblings().removeClass('oo');
+    if (c===1) {
+        $('.msLeft').addClass('oo')
+    } else {
+        $('.msLeft').removeClass('oo')
+    }
+});
+
+//
+
+$('.eProductSlide').slick({
+    arrows: false,
+    autoplay: true, 
+    autoplaySpeed: 1000,
+});
+
+
+$('.evenetProduct i:nth-of-type(1)').on('click', function(){
+    $('.eProductSlide').slick('slickPause')
+});
+
+$('.evenetProduct i:nth-of-type(2)').on('click', function(){
+    $('.eProductSlide').slick('slickPlay')
+})
 
 
 
