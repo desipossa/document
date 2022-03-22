@@ -60,7 +60,12 @@
         $('.jjammin').fullpage({
             navigation: true,
             afterLoad: function (o, d, c) {
-                $(d.item).addClass('on').siblings().removeClass('on');
+                let idx = d.index;
+                $('.section').eq(idx).addClass('on').siblings().removeClass('on');
+
+                // ----------이렇게도 만들어줄 수 있음...
+                // console.log(d.item);
+                // $(d.item).addClass('on').siblings().removeClass('on');
             }
         });
 
