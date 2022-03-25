@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기 01</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .toggle__chk {
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 30px;
+            background: #ddd;
+            border-radius: 15px;
+            font-size: 0;
+        }
+
+        .toggle__chk::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background: #333;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+
+        input:checked+.toggle__chk::after {
+            left: calc(100px - 30px);
+
+        }
+
+        input[type="checkbox"] {
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -200000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Wrap">
+        <header>
+            header
+        </header>
+
+
+
+
+        <article id="subPage">
+            <input type="checkbox" id="chk" name="fcolor" value="OO">
+            <label for="chk" class="toggle__chk">눌러보아용</label>
+
+        </article>
+
+
+
+
+
+
+
+
+        <footer>
+            &copy; lee.
+        </footer>
+    </div>
+
+</body>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script>
+    $(function () {
+
+
+    })
+</script>
+
+</html>
