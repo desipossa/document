@@ -101,6 +101,10 @@
             border-radius: 50%;
         }
 
+        .bas05 .container figure:hover::after {
+            content: attr(data-con);
+        }
+
     </style>
 </head>
 <body>
@@ -162,13 +166,13 @@
         <h2>LOREM</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, hic?</p>
         <div class="container">
-            <figure data-num="01">
+            <figure data-num="01" data-con="하나">
                 <img src="../images/lesedilarona01.jpg" alt="">
             </figure>
-            <figure data-num="02">
+            <figure data-num="02" data-con="두리">
                 <img src="../images/lesedilarona02.jpg" alt="">
             </figure>
-            <figure data-num="03">
+            <figure data-num="03" data-con="서이">
                 <img src="../images/lesedilarona03.jpg" alt="">
             </figure>
         </div>
