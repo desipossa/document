@@ -155,11 +155,25 @@
 }
 
 @keyframes heart {
-    0% {transform: scale(1);}
-    20% {transform: scale(0.5);}
-    50% {transform: scale(1);}
-    70% {transform: scale(0.5);}
-    100% {transform: scale(1);}
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .mainVisual .visualSlide .msLeft {
@@ -198,7 +212,8 @@
     padding: 0 15px;
     color: #fff;
 }
-.mainVisual .visualSlide figure.itm02 .inner{
+
+.mainVisual .visualSlide figure.itm02 .inner {
     color: #333;
 }
 
@@ -342,6 +357,7 @@
 .mainProduct .inner img {
     transition: 0.5s;
 }
+
 .mainProduct .inner:hover img {
     transform: scale(1.5);
 }
@@ -351,10 +367,10 @@
     top: -10px;
     right: 0;
 
-    border-top:10px solid #f00;
-    border-left:50px solid #f00;
-    border-bottom:10px solid #f00;
-    border-right:10px solid transparent;
+    border-top: 10px solid #f00;
+    border-left: 50px solid #f00;
+    border-bottom: 10px solid #f00;
+    border-right: 10px solid transparent;
 }
 
 .mainProduct .container figure .label span {
@@ -368,7 +384,7 @@
 
 .eventBanner {
     padding: 100px 0;
-    background:url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
     text-align: center;
     color: #fff;
     filter: grayscale(1);
@@ -401,9 +417,10 @@
 
 .evenetProduct .container {
     display: flex;
-    width:1200px;
+    width: 1200px;
     margin: 0 auto;
 }
+
 .evenetProduct .container>div {
     padding: 0 15px;
     text-align: center;
@@ -412,6 +429,7 @@
 .evenetProduct .left {
     width: 40%;
 }
+
 .evenetProduct .eProductSlide {
     padding: 5px;
     border: 5px solid #ddd;
@@ -421,7 +439,7 @@
     display: flex;
     align-items: center;
 
-    width:60%;
+    width: 60%;
 }
 
 
@@ -444,7 +462,7 @@
     background: #333;
     color: #fff;
     border-radius: 7px;
-    margin:0 5px;
+    margin: 0 5px;
 }
 
 
@@ -477,16 +495,23 @@
     padding: 0 15px;
 }
 
-.allProduct .aproductSlide figure{
-    padding: 0 15px;
+.allProduct .aproductSlide figure {
+    padding: 50px 15px;
 }
 
+.allProduct .aproductSlide figure img {
+    transition: 0.5s;
+}
+
+.allProduct .aproductSlide figure.on img {
+    transform: scale(1.2);
+}
 
 .allProduct .inner {
     margin-bottom: 20px;
 }
 
-.allProduct .inner + strong {
+.allProduct .inner+strong {
     display: block;
     margin-bottom: 20px;
 
@@ -519,7 +544,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
     padding: 10px;
     font-size: 30px;
@@ -535,16 +560,233 @@
     margin-left: 700px;
 }
 
+.movieBg {
+    padding: 200px 0;
+    background: #000;
+    filter: grayscale(1);
+
+    color: #fff;
+    text-align: center;
+}
+
+.movieBg h3 {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0.20em;
+    margin-bottom: 10px;
+}
+
+.movieBg p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.movieBg i {
+    font-size: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.customerArea {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+
+.customerArea .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.customerArea .container>div {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.customerArea .container>div .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #9acd32;
+    border: 3px solid #9acd32;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.customerArea .container>div .btn:hover {
+    background: #fff;
+    border: 3px solid #9acd32;
+    border-radius: 30px;
+    color: #9acd32;
+}
+
+.customerArea .container>div img {
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.customerArea .container>div:hover img {
+    filter: grayscale(0);
+}
+
+.customerArea .tabMenu {
+    display: flex;
+}
+
+.customerArea .tabMenu>li {
+    flex: 1;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.customerArea .tabMenu>li.oo {
+    background: #369;
+}
+
+.customerArea .tabMenu>li~li {
+    border-left: 1px solid #fff;
+}
+
+
+.customerArea .tabContent>div {
+    display: none;
+}
+
+.customerArea .tabContent>div.oo {
+    display: block;
+}
+
+.customerArea .tabContent a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3px;
+    border-bottom: 1px solid #ddd;
+}
+
+.customerArea .tabContent strong {
+    display: block;
+    width: 400px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.customerArea .tabContent span {}
+
+.footerWrap {
+    background: #333;
+    color: #f2f2f2;
+    line-height: 60px;
+}
+
+.footerWrap .top {
+    border-bottom: 1px solid #666;
+}
+
+.footerWrap .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footerWrap .container>dl {
+    display: flex;
+    padding: 0 15px;
+    gap: 40px;
+}
+
+.footerWrap .container dd {
+    position: relative;
+}
+
+.footerWrap .container dd:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #f2f2f2;
+
+    transform: translateY(-50%);
+}
+
+.footerWrap .container>div {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.footerWrap .bottom {
+    padding-bottom: 50px;
+}
+
+.footerWrap .container>* {
+    padding: 0 15px;
+}
+
+.footerWrap .link select {
+    background: #333;
+    font-size: 15px;
+    padding: 4px 10px;
+    outline: none;
+    border: none;
+    border: 2px solid #f2f2f2;
+}
 
 
 
+.popup01 {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #333;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5)
+}
 
+.popup01 img {
+    width: 400px;
+}
 
+.popup01 button {
+    position: absolute;
+    inset: auto 20px 20px auto;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #333;
+    background: #f00;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 
+.toTop {
+    position: fixed;
+    inset: auto 50px 100px auto;
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-
-
-
-
-
-
+.toTop i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+}
